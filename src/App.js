@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import Reader from './Reader';
-import CSVDownloader from './Download';
  
 
 function App() {
