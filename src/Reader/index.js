@@ -44,13 +44,14 @@ export default class Reader extends Component {
       <>
         <h5 className='Reader-title'>Please select <p className='title__p'>.csv</p>  file</h5>
         <CSVReader
-          ref={buttonRef}
-          onFileLoad={this.handleOnFileLoad}
-          onError={this.handleOnError}
-          noClick={false}
-          noDrag={false}
-          progressBarColor='#24b465'
-          onRemoveFile={this.handleOnRemoveFile}
+            ref={buttonRef}
+            onFileLoad={this.handleOnFileLoad}
+            onError={this.handleOnError}
+            noClick={false}
+            noDrag={false}
+            progressBarColor='#24b465'
+            onRemoveFile={this.handleOnRemoveFile}
+            config={{header: true }}
         >
           {({ file }) => (
             <aside className='CSVReader-aside'>
@@ -73,6 +74,7 @@ export default class Reader extends Component {
               >
                 Remove
               </button>
+
               
             </aside>
           )}
